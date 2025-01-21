@@ -6,6 +6,9 @@ body {
     color: #fff;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* גובה מלא של חלון הדפדפן */
 }
 
 /* רקע הסרטון */
@@ -65,4 +68,5 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: auto;
 }

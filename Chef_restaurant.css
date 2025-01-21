@@ -2,9 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #fffffff1;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* גובה מלא של חלון הדפדפן */
 }
 
 .video-background {
@@ -62,6 +65,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: auto;
 }
 
 @media (max-width: 750px) {

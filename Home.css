@@ -1,0 +1,186 @@
+body{
+    margin: 0 auto;
+ 
+    
+}
+header {
+    position: fixed; /* מקבע את ההדר */
+    top: 0; /* מקבע אותו לחלק העליון של העמוד */
+    left: 0;
+    width: 100%; /* מאפשר להדר לתפוס את כל רוחב העמוד */
+    height: 80px;
+    padding: 1.5rem;
+    display: flex;
+    background-color: #1454a2c1;
+    /* background-color: rgba(173, 198, 225, 0.961); */
+    z-index: 10;
+    
+}
+nav a {
+    color: #f7e6e6e1; 
+}
+
+header:hover {
+    background-color: rgba(14, 69, 157, 0.916);
+}
+.logo
+img {
+    margin-right: auto; 
+    min-width: 100px;
+    height: auto; 
+    filter: invert(100%); 
+    max-width: 100%; 
+    height: auto; 
+    filter: invert(0%); 
+    
+}
+nav ul{
+    padding: 50px 150px 0px 0px ;
+    list-style: none;
+    display: flex;
+    gap: 55px;
+    font-size: 22px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    font-size: 20px;
+    direction: rtl;
+    height: calc(100vh - 100px); /* Adjust height as needed */
+    z-index: 1;
+     text-align: center;
+    padding-top: 200px;
+}
+.center{
+    /* z-index: 10; */
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.container_cards{ 
+    background-color: rgba(255, 255, 255,0.3);
+    z-index: 1;
+    padding-top: 3px;
+    display: flex;
+    object-fit: cover;
+    width: 80%;
+}
+.card-item {
+    border: solid 5px rgb(85, 85, 161);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px black;
+    overflow: hidden;
+    width: 300px;
+    margin-left: 20px;
+    /* background-position: 20px; */
+    opacity: 0.750; /* מצב רגיל */
+    transition: opacity 0.3s ease; /* אנימציה חלקה */
+    z-index: 4;
+}
+
+.card-item:hover {
+    opacity: 1; /* מצב ריחוף */
+}
+
+.card-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    opacity: 1; /* מבטל את האטימות */
+    transition: opacity 0.1s ease; /* מאפשר שינוי חלק */
+}
+
+.card-item h3 {
+    color: rgb(0, 5, 6);
+    margin: 10px;
+    font-size: 1.5em;
+}
+section h2 {
+    font-size: 50px;
+    color:white;
+}
+
+.card-item p {
+    margin: 10px;
+    color: #031457fa;
+}
+.card-item a {
+    display: block;
+    text-align: center;
+    background-color: #0047ab;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    margin: 10px;
+    border-radius: 10px;
+}
+.card-item a:hover {
+    background-color: #002f6c;
+}
+footer {
+    background-color: rgba(25, 25, 152, 0.847);
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    
+    
+}
+.img-background img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+    border-width: 100%;
+    z-index: -1;
+    opacity: 1; /*שקיפות תמונת מסך הבית */
+    pointer-events: none;
+}
+.section{
+    margin-top: -300px;
+}
+h1{
+    font-size: 60px;
+}
+.hero p{
+    font-size: 40px;
+    
+}
+/* תצוגה עבור מסכים קטנים יותר */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    
+    .hero p {
+        font-size: 20px;
+    }
+    
+    .logo img {
+        width: 80px;
+        filter: invert(0%);
+    }
+    
+    .container_cards {
+        width: 100%;
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .card-item {
+        margin: 20px auto;
+        width: 90%;
+    }
+    header {
+        flex-direction: column; 
+        align-items: center; 
+        height: auto; 
+        padding: 1rem;
+        filter: invert(0%);
+         
+    }
+}

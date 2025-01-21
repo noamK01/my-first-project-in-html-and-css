@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צור קשר - מלונות יוקרה</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>צור קשר</h1>
+        <nav>
+            <a href="home.html">דף הבית</a>
+            <a href="about.html">אודות</a>
+        </nav>
+    </header>
+    <main>
+        <section id="contact-form" class="section">
+            <h2>נשמח לשמוע ממך!</h2>
+            <form action="thanks.html" method="get">
+                <label for="name">שם מלא:</label>
+                <input type="text" id="name" name="name" placeholder="הכנס את שמך" required>
+
+                <label for="email">אימייל:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                <label for="message">הודעה:</label>
+                <textarea id="message" name="message" rows="5" placeholder="כתוב כאן את הודעתך" required></textarea>
+
+                <button type="submit">שלח</button>
+            </form>
+        </section>
+        <section id="contact-icons" class="section">
+            <h2>דרכי התקשרות</h2>
+            <div class="icons">
+                <a href="https://wa.me/123456789" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="סמל ווצאפ" width="50">
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="סמל פייסבוק" width="50">
+                </a>
+                <a href="tel:123456789">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmvSjlMMbr1h9wZQkmW84Zy6ZcHLcdzwxhXg&s" alt="סמל טלפון" width="50">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 מלונות יוקרה. כל הזכויות שמורות.</p>
+    </footer>
+</body>
+</html>

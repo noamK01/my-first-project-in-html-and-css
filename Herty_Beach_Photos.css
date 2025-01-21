@@ -1,0 +1,68 @@
+/* עיצוב עמוד */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+/* רקע הסרטון */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; /* רמת השקיפות של הסרטון */
+}
+
+/* כותרות ותפריט */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* רקע שקוף לכותרת */
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* גלריה */
+/* .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+} */
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* עיצוב תחתית */
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
